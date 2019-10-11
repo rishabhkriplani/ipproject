@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+*{
+  margin: 80;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.contact-section{
+  background: url(bg.png) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+   margin: 40px auto;
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background: #4caf50;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 2px solid #4caf50;
+  background: #4caf50;
+  color: white;
+  padding: 12px 50px;
+  border-radius: 20px ;
+  cursor: pointer;
+  transition: 0.5s;
+  
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+
+</style>
+</head>
+<body>
+
+
+<! Header>
+<div class="header">
+  <a href="#default" class="logo">The Park Hotel</a>
+  <div class="header-right">
+    <a href="home.html">Home</a>
+	<a href="login.html">Login</a>
+    <a class="active" href="contactus.html">Contact Us</a>
+    <a href="about.html">About</a>
+  </div>
+
+
+
+<div class="contact-section">
+
+  <h1>Contact Us</h1>
+  <div class="border"></div>
+  <form class="contact-form" action="index.html" method="post">
+    <input type="text" class="contact-form-text" placeholder="Your name">
+    <input type="email" class="contact-form-text" placeholder="Your email">
+    <input type="text" class="contact-form-text" placeholder="Your phone">
+    <textarea class="contact-form-text" placeholder="Your message"></textarea>
+    <input type="submit" class="contact-form-btn" value="Send">
+  </form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+

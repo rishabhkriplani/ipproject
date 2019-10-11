@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<meta charset="UTF-8">
+</head>
+<body>
+
+
+<! Header>
+<div class="header">
+  <a href="#default" class="logo">The Park Hotel</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+	<a href="login.html">Login</a>
+    <a href="contactus.html">Contact Us</a>
+    <a href="about.html">About Us</a>
+  </div>
+</div>
+
+
+
+
+
+<! Slideshow>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="image.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="download.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span>  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<h1 class="ash1" style="text-transform: inherit;"><pseudo:before></<pseudo:before>Distinctly Warm Indian Hospitality
+<span style="font-size:14px; display:block;margin:10px 0px" ;>Enjoy luxury at its best with exceptional experiences in Mumbai
+			</span>
+</h1>
+<p>"A benchmark of 5-star standards of luxury and impeccable service.The Park Hotel offers a travel experience unlike any other in the city"</p>
+
+<h1 class="ash1" style="text-transform: inherit;"><pseudo:before></<pseudo:before>Rooms</h1>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="clubroom.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+	  <h2>Club Room</h2>
+        <p><button class="button" onclick="window.location.href='file:///C:/Users/risha/Desktop/New%20folder/login.html';">Book Now</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="deluxeroom.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Deluxe Room</h2>
+        <p><button class="button" onclick="window.location.href='file:///C:/Users/risha/Desktop/New%20folder/login.html';">Book Now</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="premierroom.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Suite</h2>
+        <p><button class="button" onclick="window.location.href='file:///C:/Users/risha/Desktop/New%20folder/login.html';">Book Now</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!footer>
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<br><br>
+				<div class="col-md-7">
+					<div id="contact-left">
+						<h3>The Park Hotel</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!Footer>
+	<footer>
+		<div class="main_footer">
+			<div class="footer_wrapper">
+				<div class="first_section">
+				</div>
+				<div class="second_section">
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
